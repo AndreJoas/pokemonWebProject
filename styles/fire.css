@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #41817cfc;
+}
+
+.retangulo {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(104.04deg, #F6C093 14.79%, #C4D5FA 50.52%, #F6C093 87.02%), #FFFFFF;
+    cursor: pointer;
+}

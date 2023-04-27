@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+#corpo {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -11,11 +12,12 @@ body{
     justify-content: center;
     background: #41817cfc;
 }
-.retangulo{
+
+.retangulo {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
-    width: 50%;
+    max-width: 60%;
+    width: 100%;
     margin-top: 5rem;
     align-items: center;
     justify-content: center;
@@ -23,15 +25,32 @@ body{
     background: linear-gradient(104.04deg, #F6C093 14.79%, #C4D5FA 50.52%, #F6C093 87.02%), #FFFFFF;
     cursor: pointer;
 }
-.pokebolls{
+
+.pokebolls {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    max-width: 70%;
+    margin: 5px;
+    height: 10rem;
     justify-content: space-around;
     gap: 5px;
     padding: 2px;
+    align-items: center;
 }
-.divft2{
+
+.pokebolls2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    margin: 5px;
+    height: 10rem;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 2px;
+    align-items: center;
+}
+
+.divft2 {
     display: flex;
     flex-direction: column;
     max-width: 60%;
@@ -39,46 +58,462 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+
 }
-.r{
+
+.r {
     background: #e10808;
     color: rgb(211, 211, 211);
     height: 10rem;
     margin: 5px;
     border-radius: 10px;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid rgb(147, 7, 7);
+        border-left: 5px solid rgb(147, 7, 7);
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid rgb(147, 7, 7);
+        border-right: 5px solid rgb(147, 7, 7);
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
 }
-.d{
+
+.d {
     background: #312e2e;
     color: white;
     height: 10rem;
     margin: 5px;
     border-radius: 10px;
+
+    position: relative;
+    padding: 10px 20px;
+  
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid rgb(255, 255, 255);
+        border-left: 5px solid rgb(255, 255, 255);
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid rgb(255, 255, 255);
+        border-right: 5px solid rgb(255, 255, 255);
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
 }
-.b{
+
+.b {
     background: #0e3286;
     color: white;
     height: 10rem;
     margin: 5px;
     border-radius: 10px;
+    position: relative;
+    padding: 10px 20px;
+  
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid rgb(12, 225, 225);
+        border-left: 5px solid rgb(12, 225, 225);
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid rgb(12, 225, 225);
+        border-right: 5px solid rgb(12, 225, 225);
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
 }
-.g{
+
+.g {
     background: #0a7f37;
     color: white;
     height: 10rem;
     margin: 5px;
     border-radius: 10px;
+
+    position: relative;
+    padding: 10px 20px;
+  
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid rgb(121, 199, 82);
+        border-left: 5px solid rgb(121, 199, 82);
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid rgb(121, 199, 82);
+        border-right: 5px solid rgb(121, 199, 82);
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    
 }
-img{
-    width: 50%;
+
+.t {
+    background: #d2d214;
+    color: white;
+    height: 10rem;
+    margin: 5px;
+    border-radius: 10px;
+
+
+    
+    position: relative;
+    padding: 10px 20px;
+  
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid  #f4f429;
+        border-left: 5px solid #f4f429;
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid  #f4f429;
+        border-right: 5px solid  #f4f429;
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    
+}
+
+.ro {
+    background: #D3853B;
+    color: white;
+    height: 10rem;
+    margin: 5px;
+    border-radius: 10px;
+
+
+    position: relative;
+    padding: 10px 20px;
+  
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid  #c96506;
+        border-left: 5px solid #c96506;
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid #c96506;
+        border-right: 5px solid #c96506;
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    
+}
+
+.w {
+    background: #ffffff;
+    color: rgb(161, 154, 154);
+    height: 10rem;
+    margin: 5px;
+    border-radius: 10px;
+
+
+    
+    position: relative;
+    padding: 10px 20px;
+  
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid rgb(0, 0, 0);
+        border-left: 5px solid rgb(0, 0, 0);
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid rgb(0, 0, 0);
+        border-right: 5px solid rgb(0, 0, 0);
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    
+}
+
+.m {
+    background: #746EAF;
+    color: white;
+    height: 10rem;
+    margin: 5px;
+    border-radius: 10px;
+
+
+    
+    position: relative;
+    padding: 10px 20px;
+  
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid #4a447e;
+        border-left: 5px solid #4a447e;
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid #4a447e;
+        border-right: 5px solid #4a447e;
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    
+}
+
+img {
+    max-width: 50%;
+    width: 100%;
     display: flex;
 }
-.titulo{
+
+.titulo {
     font-size: 2rem;
-    color:#343434;
+    color: #343434;
     cursor: pointer;
 }
-.explorar{
+
+.explorar {
     display: flex;
     flex-direction: column;
     max-width: 40%;
@@ -95,28 +530,52 @@ img{
     margin-top: 0.7rem;
     margin: 4px;
 }
+
 @media (max-width:1000px) {
-    .retangulo{
+    .retangulo {
         max-width: 90%;
         width: 100%;
     }
 }
+
 @media (max-width:700px) {
-    .pokebolls{
+    .pokebolls {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .pokebolls2 {
         max-width: 100%;
         width: 100%;
     }
 }
+
 @media (max-width:500px) {
-    .pokebolls{
+    .retangulo {
+        width: 100%;
+        height: 92rem;
+        justify-content: start;
+    }
+
+    .pokebolls {
         max-width: 100%;
         width: 100%;
         flex-wrap: wrap;
     }
-    .retangulo{
-        margin-top:1rem ;
+
+    .pokebolls2 {
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 34rem;
     }
-    .explorar{
+
+    .retangulo {
+        margin-top: 1rem;
+    }
+
+    .explorar {
         margin: 4px;
+        margin-top: 33.5rem;
     }
 }

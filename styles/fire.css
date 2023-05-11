@@ -244,6 +244,10 @@ img{
     #pokemon1,#pokemon2,#pokemon3,#pokemon4{
         max-width: 30%;
     }
+    .retangulo{
+        margin-top: 3rem;
+        max-width: 95%;
+    }
     .eixo1,.eixo2,.eixo3, .eixo4{
         display: flex;
         max-width: 100%;
@@ -256,6 +260,10 @@ img{
     
 }
 @media (max-width:770px) {
+    .retangulo{
+        margin-top: 3rem;
+        max-width: 95%;
+    }
     .suptopico{
         max-width: 90%;
         

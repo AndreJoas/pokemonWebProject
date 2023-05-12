@@ -65,11 +65,22 @@ body {
     margin: 2px;
     
 }
+#pokedex{
+    transition: linear 0.5s;
+    
+}
+
 .pokeboll{
     max-width: 50%;
     width: 40%;
     display: flex;
     border: solid blue 2px;
+    transform-style: preserve-3d;
+    transition: linear 0.4s;
+
+}
+.pokeboll:hover{
+    transform:rotateY(180deg)
 }
 .sumario{
     display: flex;
@@ -127,17 +138,38 @@ body {
     border: solid red 1px;
     margin: 3px;
     padding: 5px;
+
+    animation: poke 2s ease  infinite;
+    background-size: 400% 400%;
+    background-image:  linear-gradient(135deg ,red , orange 50% , red 80%, orange );
+
 }
-.pokedex{
+
+@keyframes poke {
+    0% {
+      background-position: 51% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 51% 0%;
+    }
+  }
+
+#pokedex{
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    max-width: 33%;
     width: 100%;
     justify-content: center;
     align-items: center;
     cursor: pointer; 
     padding: 2px;
     margin: 2px;  
+}
+#pokedex:hover{
+    transform: rotateY(180deg);
 }
 img{
     max-width: 100%;
@@ -259,6 +291,7 @@ img{
     }
     
 }
+
 @media (max-width:770px) {
     .retangulo{
         margin-top: 3rem;
@@ -367,11 +400,11 @@ img{
         align-items: center;
     }
     .retangulo{
-        margin-top: 3rem;
+        margin-top: 2rem;
         max-width: 95%;
     }
     #pokemon1,#pokemon2,#pokemon3,#pokemon4{
-        max-width: 80%;
+        max-width: 85%;
         width: 100%;
     }
     .eixo1,.eixo2,.eixo3, .eixo4{

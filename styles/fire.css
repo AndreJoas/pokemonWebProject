@@ -10,9 +10,9 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    animation: poke 2s ease  infinite;
+    animation: poke 7s  linear  infinite;
     background-size: 400% 400%;
-    background-image:  linear-gradient(135deg ,rgb(46, 60, 78) , rgb(85, 98, 118) 50% , rgb(80, 78, 78) 80%, rgb(86, 85, 82) );
+    background-image:  linear-gradient(135deg ,rgb(204, 42, 42) 40%, rgb(215, 140, 9)45%, rgb(0, 0, 0) 50%,rgb(28, 15, 15) 40% );
 ;
 }
 
@@ -25,19 +25,19 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background: linear-gradient(104.04deg, #F6C093 14.79%, #C4D5FA 50.52%, #F6C093 87.02%), #FFFFFF;
+    background:  rgba(2, 1, 1, 0.27) ;
+
     cursor: pointer;
     height: 37rem;
-    box-shadow:  hsl(0, 100%, 50%) 15px 2px 35px 25px;
 
 }
 .topico{
-    border: solid 1px red;
+    /* border: solid 1px red; */
     max-width: 90%;
     width: 100%;
     padding: 4px;
     margin: 2px;
-
+    color:#fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,6 +48,7 @@ body {
 }
 .divft{
     display: flex;
+    color:#fff;
     flex-direction: column;
     max-width: 100%;
     width: 50%;
@@ -58,13 +59,13 @@ body {
     margin: 2px;  
 }
 .suptopico{
-    border: solid blue 2px;
+    /* border: solid blue 2px; */
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+    color:#fff;
     max-width: 80%;
     padding: 2px;
     margin: 2px;
@@ -79,7 +80,7 @@ body {
     max-width: 50%;
     width: 40%;
     display: flex;
-    border: solid blue 2px;
+    /* border: solid blue 2px; */
     transform-style: preserve-3d;
     transition: linear 0.4s;
 
@@ -92,22 +93,29 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    border: solid blue 2px;
+    /* border: solid blue 2px; */
     
     font-size: 1.09rem;
 }
 
 .lista{
     overflow-x: hidden;
+    
     display: flex;
     flex-direction: column;
     height: 22rem;
     max-width: 95%;
     width: 100%;
-    border: solid yellow 2px;
+    /* border: solid yellow 2px; */
     align-items: start;
     align-content: flex-start;
     justify-content: flex-start;
+}
+::-webkit-scrollbar{
+    background-color: rgb(20, 19, 19);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
 }
 .eixo1{
     
@@ -144,10 +152,11 @@ body {
     margin: 3px;
     padding: 5px;
 
-    animation: poke 2s ease  infinite;
+    animation: poke 5s ease  infinite;
     background-size: 400% 400%;
-    background-image:  linear-gradient(135deg ,red , orange 50% , red 80%, orange );
+    background-image:  linear-gradient(135deg ,rgba(255, 0, 0, 0.958) 20%, orange 50% , red 80%, orange );
 
+    /* background-image:  linear-gradient(135deg ,red 20%, orange 50% , red 80%, orange ); */
 }
 
 @keyframes poke {
@@ -229,6 +238,8 @@ img{
     margin-bottom: 0.5rem;
     text-align: center;
     border-bottom: solid 2px orangered;
+
+    font-weight: 900;
 }
 .status{
     display: flex;
@@ -237,6 +248,7 @@ img{
     flex-direction: column;
     max-width: 100%;
     width: 100%;
+  
     
 }
 .estatisticas{
@@ -275,8 +287,52 @@ img{
     justify-content: end;
     align-items: center;
     padding: 4px;
+    
 }
+#display{
+    color:#000000;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+.hp{
+    color:#000000;
+    font-size: 0.9rem;
+    font-weight: 900;
+    padding: 2px;
+}
+.voltar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
 
+}
+.voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 50%;
+
+    text-decoration: none;
+}
+.voltar3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    width: 20%;
+    font-size: 1rem;
+    border:none;
+    border-radius: 5px;
+    background: #d54005d1;
+    color:#fff;
+    cursor: pointer;
+}
 @media (max-width:998px) {
     #pokemon1,#pokemon2,#pokemon3,#pokemon4{
         max-width: 30%;

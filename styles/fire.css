@@ -10,9 +10,8 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    animation: poke 7s  linear  infinite;
     background-size: 400% 400%;
-    background-image:  linear-gradient(135deg ,rgb(204, 42, 42) 40%, rgb(215, 140, 9)45%, rgb(0, 0, 0) 50%,rgb(28, 15, 15) 40% );
+    background-image:  linear-gradient(135deg ,rgb(204, 42, 42)5%, rgb(215, 140, 9)9%, rgb(208, 12, 12) 12%,rgb(28, 15, 15) 3%);
 ;
 }
 
@@ -151,7 +150,7 @@ body {
     border: solid red 1px;
     margin: 3px;
     padding: 5px;
-
+    gap:7px;
     animation: poke 5s ease  infinite;
     background-size: 400% 400%;
     background-image:  linear-gradient(135deg ,rgba(255, 0, 0, 0.958) 20%, orange 50% , red 80%, orange );
@@ -315,7 +314,7 @@ img{
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    width: 50%;
+    width: 80%;
 
     text-decoration: none;
 }
@@ -324,8 +323,9 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
-    width: 20%;
+    max-width: 70%;
+    width: 30%;
+    
     font-size: 1rem;
     border:none;
     border-radius: 5px;

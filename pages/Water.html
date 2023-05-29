@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/fire.css">
+    <link rel="stylesheet" href="../styles/water.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="retangulo">
+        <div class="topico">
+            <h3 class="titulo">Pokémons De Água</h3>
+        </div>
+        <div class="suptopico">
+            <div class="sumario">
+                <h3>HP = Vida</h3>
+                <h3>ATK = Ataque</h3>
+                <h3>DEF = Defesa</h3>
+                <h3>SATK = Força de Ataque Especial</h3>
+                <h3>SPD = Velocidade</h3>
+                <h6>Clique em um pokemon</h6>
+            </div>
+            <div class="divft">
+                <img class="pokeboll" src="../images/Pokeballred.svg" alt="">
+            </div>
+        </div>
+
+        <div class="lista">
+            <div class="eixo1">
+                <div id="pokemon1">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/magmar.gif" alt="Magmar"></div>
+                    <button class="tipowater">Magma</button>
+                    <div class="carac">
+                        <h4 class="peso">30.0 Kg</h4>
+                        <h4 class="altura">2.5 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo Suprema</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Esquentar</h4>
+                            <h4>* Evaporizar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="80" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="80" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="55" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="55" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="60" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="60" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="90" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="90" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="35" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="35" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon2">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif" alt="Charmander"></div>
+                    <button class="tipowater">Charmander</button>
+                    <div class="carac">
+                        <h4 class="peso">9.0 Kg</h4>
+                        <h4 class="altura">0.5 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Cauda de ferro</h4>
+                            <h4>* Arranhar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="44" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="44" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="22" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="22" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="30" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="30" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="35" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="35" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="43" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="50" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center;text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon3">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/charmeleon.gif" alt="Charmeleon"></div>
+                    <button class="tipowater">Charmilion</button>
+                    <div class="carac">
+                        <h4 class="peso">11.0 Kg</h4>
+                        <h4 class="altura">0.9 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bafo de Fogo Ardente</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Cauda de Fogo</h4>
+                            <h4>* Explosão</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="60" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="60" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="37" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="37" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="40" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="40" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="48" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="48" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="43" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="43" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon4">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif" alt="Charizard"></div>
+                    <button class="tipowater">Charizard</button>
+                    <div class="carac">
+                        <h4 class="peso">45.0 Kg</h4>
+                        <h4 class="altura">5 m</h4>
+                        <div class="movimentos">
+                            <h4>* Híper Bola de Fogo</h4>
+                            <h4>* Furacão Flamejante</h4>
+                            <h4>* Big Bang</h4>
+                            <h4>* Vôo do Dragão</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status"> 
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="110" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="110" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="120" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="120" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="100" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="100" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="115" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="115" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="100" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="100" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -- -->
+            <div class="eixo2">
+                <div id="pokemon1">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/charizard.gif" alt="Charizard"></div>
+                    <button class="tipowater">Mega Charizard</button>
+                    <div class="carac">
+                        <h4 class="peso">90.0 Kg</h4>
+                        <h4 class="altura">7.0 m</h4>
+                        <div class="movimentos">
+                            <h4>* Surper Bola de Fogo</h4>
+                            <h4>* Ataque Aéreo</h4>
+                            <h4>* Tornado de Fogo</h4>
+                            <h4>* Sacrifício</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="290" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="290" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="260" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="260" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="250" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="250" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="300" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="300" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="240" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="240" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon2">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/flareon.gif" alt="Flareon"></div>
+                    <button class="tipowater">Flareon</button>
+                    <div class="carac">
+                        <h4 class="peso">8.0 Kg</h4>
+                        <h4 class="altura">0.9 m</h4>
+                        <div class="movimentos">
+                            <h4>* Lança Shamas</h4>
+                            <h4>* Ataque Rapido</h4>
+                            <h4>* Cauda de ferro</h4>
+                            <h4>* Bola de Fogo</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="60" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="60" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="35" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="35" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="30" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="30" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="45" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="45" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="63" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="63" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon3">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/rapidash.gif" alt="Rapidash"></div>
+                    <button class="tipowater">Rapidash</button>
+                    <div class="carac">
+                        <h4 class="peso">450.0 Kg</h4>
+                        <h4 class="altura">1.6m</h4>
+                        <div class="movimentos">
+                            <h4>* Avançar</h4>
+                            <h4>* Furacão de Fogo</h4>
+                            <h4>* Terremoto</h4>
+                            <h4>* Bola de Fogo</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="130" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="130" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="55" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="55" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="45" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="45" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="60" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="60" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="65" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="65" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon4">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/glalie.gif" alt="Glalie"></div>
+                    <button class="tipowater">Glalie</button>
+                    <div class="carac">
+                        <h4 class="peso">500 Kg</h4>
+                        <h4 class="altura">7 m</h4>
+                        <div class="movimentos">
+                            <h4>* Meteoro de Fogo</h4>
+                            <h4>* Abalo Sismico</h4>
+                            <h4>* Explosão</h4>
+                            <h4>* Terremoto</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="100" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="100" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="70" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="70" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="96" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="96" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="107" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="107" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="80" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="80" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -- -->
+            <div class="eixo3">
+                <div id="pokemon1">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/arcanine.gif" alt="Arcanine"></div>
+                    <button class="tipowater">Arcanine</button>
+                    <div class="carac">
+                        <h4 class="peso">18.0 Kg</h4>
+                        <h4 class="altura"> 0.9m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Mordida</h4>
+                            <h4>* Ataque Rapido</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="120" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="120" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="69" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="69" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="60" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="60" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="99" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="99" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="130" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="130" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon2">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/houndoom.gif" alt="Houndoom"></div>
+                    <button class="tipowater">Houndoom</button>
+                    <div class="carac">
+                        <h4 class="peso">22.0 Kg</h4>
+                        <h4 class="altura">0.9 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Névoa</h4>
+                            <h4>* Explosão</h4>
+                            <h4>* Arranhar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="110" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="110" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="90" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="90" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="79" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="79" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="87" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="87" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="125" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="125" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon3">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/infernape.gif" alt="Infernape"></div>
+                    <button class="tipowater">Infernape</button>
+                    <div class="carac">
+                        <h4 class="peso">23.0 Kg</h4>
+                        <h4 class="altura">1.4 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Arremesso</h4>
+                            <h4>* Cauda de Ferro</h4>
+                            <h4>* Terremoto</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="180" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="180" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="140" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="140" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="135" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="135" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="180" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="180" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="160" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="160" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon4">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif" alt="Typhlosion"></div>
+                    <button class="tipowater">Typhlosion</button>
+                    <div class="carac">
+                        <h4 class="peso">32.0 Kg</h4>
+                        <h4 class="altura">3.2 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola Explosiva</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Focus</h4>
+                            <h4>* Arranhar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="235" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="235" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="197" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="197" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="155" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="155" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="200" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="200" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="130" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="130" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -- -->
+            <div class="eixo4">
+                <div id="pokemon1">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/blaziken.gif" alt="Blaziken"></div>
+                    <button class="tipowater">Blaziken</button>
+                    <div class="carac">
+                        <h4 class="peso">6.0 Kg</h4>
+                        <h4 class="altura">1.9 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Chute Explosivo</h4>
+                            <h4>* Ataque Rapido</h4>
+                            <h4>* Arranhar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="148" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="148" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="110" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="110" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="130" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="130" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="140" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="140" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="100" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="100" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon2">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/ninetales.gif" alt="Ninetales"></div>
+                    <button class="tipowater">Ninetales</button>
+                    <div class="carac">
+                        <h4 class="peso">20.0 Kg</h4>
+                        <h4 class="altura">2.2 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Furacão de Fogo</h4>
+                            <h4>* Cauda de ferro</h4>
+                            <h4>* Cavar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="170" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="170" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="100" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="100" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="110" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="110" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="130" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="130" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="110" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="110" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon3">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/cyndaquil.gif" alt="Cyndaquil"></div>
+                    <button class="tipowater">Cyndaquil</button>
+                    <div class="carac">
+                        <h4 class="peso">10.0 Kg</h4>
+                        <h4 class="altura">0.6 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Ataque Rapido</h4>
+                            <h4>* Cavar</h4>
+                            <h4>* Lança Chamas</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="67" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="67" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="40" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="40" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="35" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="35" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="55" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="55" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="48" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="48" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon4">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/magcargo.gif" alt="Magcargo"></div>
+                    <button class="tipowater">Magcargo</button>
+                    <div class="carac">
+                        <h4 class="peso">14.0 Kg</h4>
+                        <h4 class="altura">0.5 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Vulcano</h4>
+                            <h4>* Fumaça</h4>
+                            <h4>* Incendiar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="118" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="118" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="89" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="89" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="100" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="100" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="87" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="87" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="60" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="60" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -- -->
+            <div class="eixo4">
+                <div id="pokemon1">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/chimchar.gif" alt="Chimchar"></div>
+                    <button class="tipowater">Chimchar</button>
+                    <div class="carac">
+                        <h4 class="peso">9.0 Kg</h4>
+                        <h4 class="altura">0.5 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Cauda de ferro</h4>
+                            <h4>* Arranhar</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1" style="display: flex;">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="44" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="44" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="22" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="22" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="30" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="30" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="35" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="35" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="43" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="43" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon2">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/slugma.gif" alt="Slugma"></div>
+                    <button class="tipowater">Slugma</button>
+                    <div class="carac">
+                        <h4 class="peso">8.0 Kg</h4>
+                        <h4 class="altura">0.7 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Lava</h4>
+                            <h4>* Focus</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="60" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="60" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="32" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="32" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="40" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="40" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="42" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="42" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="30" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="30" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon3">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/magmortar.gif" alt="Magmortar"></div>
+                    <button class="tipowater">Magmortar</button>
+                    <div class="carac">
+                        <h4 class="peso">30.0 Kg</h4>
+                        <h4 class="altura">2.0 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Arremesso</h4>
+                            <h4>* Lança Chamas</h4>
+                            <h4>* Tremor</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="180" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="180" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="133" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="133" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="165" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="165" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="150" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="150" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="130" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="130" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pokemon4">
+                    <div id="pokedex"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/torkoal.gif" alt="Torkoal"></div>
+                    <button class="tipowater">Torkoal</button>
+                    <div class="carac">
+                        <h4 class="peso">33.0 Kg</h4>
+                        <h4 class="altura">0.8 m</h4>
+                        <div class="movimentos">
+                            <h4>* Bola de Fogo</h4>
+                            <h4>* Incendiar</h4>
+                            <h4>* Neblina</h4>
+                            <h4>* Ataque Rapido</h4>
+                        </div>
+                    </div>
+                    <h4 class="basicos">Status Basicos</h4>
+                    <div class="status">
+                        <div class="estatisticas">
+                            <div class="valores1">
+                                <div class="ip1">
+                                    <label class="hp">HP</label>
+                                    <input type="range" id="vol" name="vol" value="100" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="100" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- ------------- -->
+                            <div class="valores2">
+                                <div class="ip1">
+                                    <label class="hp">ATK</label>
+                                    <input type="range" id="vol" name="vol" value="79" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="79" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">DEF</label>
+                                    <input type="range" id="vol" name="vol" value="106" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="106" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SATK</label>
+                                    <input type="range" id="vol" name="vol" value="90" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="90" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                            <!-- -------------- -->
+                            <div class="valores">
+                                <div class="ip1">
+                                    <label class="hp">SPD</label>
+                                    <input type="range" id="vol" name="vol" value="70" disabled="" min="0" max="300"
+                                        oninput="display.value=value" onchange="display.value=value">
+                                </div>
+                                <div class="ip2">
+                                    <input type="text" id="display" value="70" disabled="" oninput="vol.value=value"
+                                        onchange="vol.value=value"
+                                        style="background: transparent; border: none; display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: end;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="voltar2">
+            <a href="page01.html" class="voltar"><button class="voltar3" >Voltar</button></a>
+        </div>
+    </div>
+    <script src="../scripts/fire.js"></script>
+    
+    <audio id="musica" autoplay loop>
+        <source src="../songs/Oreburgh City (Day).mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>

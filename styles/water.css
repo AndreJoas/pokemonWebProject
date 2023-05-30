@@ -12,7 +12,7 @@ body {
     color:#fff;
     justify-content: center;
     background-size: 100%  300%;
-    background-image:  linear-gradient(135deg ,rgb(248, 246, 246) 3%,rgb(42, 123, 204)5%, rgb(9, 191, 215)9%, #faf4f4 20%,rgb(12, 185, 208) 15%,rgb(78, 9, 215)12%,rgb(89, 89, 180) 9%,  rgb(12, 195, 208) 5%,#fdf4f4 20%,#f5eeee 10%,rgb(12, 139, 208) 15%,rgb(9, 160, 215)12%,rgb(248, 243, 243) 9%,  rgb(32, 12, 208),rgb(97, 91, 199) 45%,rgb(9, 191, 215)12%,rgb(55, 15, 136) 9%,  rgb(229, 227, 240),#177490 50%,rgb(229, 231, 239)65%,#efecec 80%);
+    background: linear-gradient(187deg, rgba(24,44,139,1) 23%, rgba(17,183,210,0.8100490196078431)40%,rgba(24,44,139,1) 60%,rgba(17,183,210,0.8100490196078431)70%);
 }
 
 .tipowater{
@@ -87,7 +87,7 @@ body {
     font-size: 1rem;
     border:none;
     border-radius: 5px;
-    background: #8c05d5d1;
+    background: #2105d5d1;
     color:#fff;
     cursor: pointer;
 }
@@ -99,4 +99,424 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.retangulo {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background:  rgba(2, 1, 1, 0.27) ;
+
+    cursor: pointer;
+    height: 37rem;
+
+}
+.topico{
+    /* border: solid 1px red; */
+    max-width: 90%;
+    width: 100%;
+    padding: 4px;
+    margin: 2px;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.4rem;
+    font-family: monospace;
+}
+.divft{
+    display: flex;
+    color:#fff;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer; 
+    padding: 2px;
+    margin: 2px;  
+}
+.suptopico{
+    /* border: solid blue 2px; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+    max-width: 80%;
+    padding: 2px;
+    margin: 2px;
+    
+}
+#pokedex{
+    transition: linear 0.5s;
+    
+}
+
+.pokeboll{
+    max-width: 50%;
+    width: 40%;
+    display: flex;
+    /* border: solid blue 2px; */
+    transform-style: preserve-3d;
+    transition: linear 0.4s;
+
+}
+.pokeboll:hover{
+    transform:rotateY(180deg)
+}
+.sumario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* border: solid blue 2px; */
+    
+    font-size: 1.09rem;
+}
+
+.lista{
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+    max-width: 95%;
+    width: 100%;
+    /* border: solid yellow 2px; */
+    align-items: start;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+::-webkit-scrollbar{
+    background-color: rgb(20, 19, 19);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+.eixo1{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+   
+    
+}
+.eixo2, .eixo3,.eixo4{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+}
+
+
+
+#pokedex{
+    display: flex;
+    flex-direction: row;
+    max-width: 33%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    padding: 2px;
+    margin: 2px;  
+}
+#pokedex:hover{
+    transform: rotateY(180deg);
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin: 6px;
+}
+.carac{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    text-align: start;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+.peso, .altura{
+    border-right: solid 2px gray;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+.movimentos{
+    border-right: solid 2px gray;
+    height: 4rem;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 1px;
+}
+
+
+
+.status{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  
+    
+}
+
+.valores1, .valores2,.valores{
+    border: solid 1px rgb(9, 8, 8);
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.ip1{
+    max-width: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 4px;
+}
+.ip2{
+    max-width: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 4px;
+    
+}
+#display{
+    color:#000000;
+    font-size: 0.8rem;
+    font-weight: 900;
+    
+}
+.hp{
+    color:#000000;
+    font-size: 0.8rem;
+    font-weight: 900;
+    padding: 2px;
+}
+.voltar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
+
+}
+.voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 80%;
+
+    text-decoration: none;
+}
+
+@media (max-width:998px) {
+    #pokemon1,#pokemon2,#pokemon3,#pokemon4{
+        max-width: 30%;
+    }
+    .retangulo{
+        margin-top: 3rem;
+        max-width: 95%;
+    }
+    .eixo1,.eixo2,.eixo3, .eixo4{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+}
+
+@media (max-width:770px) {
+    .retangulo{
+        margin-top: 3rem;
+        max-width: 95%;
+    }
+    .suptopico{
+        max-width: 90%;
+        
+        justify-content: space-between;
+    }
+    #pokemon1,#pokemon2,#pokemon3,#pokemon4{
+        max-width: 42%;
+    }
+    .eixo1,.eixo2,.eixo3, .eixo4{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;
+    }
+    .pokeboll{
+        max-width: 60%;
+        width: 100%;
+    }
+}
+
+@media (max-width:580px) {
+    .sumario{
+        font-size: 1rem;
+    }
+    .retangulo{
+        margin-top: 3rem;
+        max-width: 95%;
+    }
+    #pokemon1,#pokemon2,#pokemon3,#pokemon4{
+        max-width: 47%;
+    }
+    .eixo1,.eixo2,.eixo3, .eixo4{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;
+        
+    }
+    .suptopico{
+        max-width: 90%;
+
+        justify-content: space-between;
+    }
+    .pokeboll{
+        max-width: 80%;
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .sumario{
+        font-size: 0.8rem;
+    }
+    .retangulo{
+        margin-top: 3rem;
+        max-width: 95%;
+    }
+    #pokemon1,#pokemon2,#pokemon3,#pokemon4{
+        max-width: 80%;
+        width: 100%;
+    }
+    .eixo1,.eixo2,.eixo3, .eixo4{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;
+        
+    }
+    .suptopico{
+        max-width: 90%;
+
+        justify-content: space-between;
+    }
+    .pokeboll{
+        max-width: 90%;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:320px) {
+    .topico{
+        text-align: center;
+        align-items: center;
+    }
+    .sumario{
+        justify-content: center;
+        font-size: 0.9rem;
+        text-align: center;
+        align-items: center;
+    }
+    .retangulo{
+        margin-top: 2rem;
+        max-width: 95%;
+    }
+    #pokemon1,#pokemon2,#pokemon3,#pokemon4{
+        max-width: 85%;
+        width: 100%;
+    }
+    .eixo1,.eixo2,.eixo3, .eixo4{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;
+        
+    }
+    .suptopico{
+        max-width: 90%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        
+    }
+    .pokeboll{
+        max-width: 99%;
+        width: 100%;
+    }
 }
